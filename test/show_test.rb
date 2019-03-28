@@ -21,7 +21,6 @@ class ShowTest < MiniTest::Test
   end
 
   def test_it_has_an_array_of_characters
-    assert_equal 2, @knight_rider.characters.count
     assert_equal [@michael_knight, @kitt], @knight_rider.characters
   end
 

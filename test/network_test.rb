@@ -34,7 +34,6 @@ class NetworkTest < MiniTest::Test
     @nbc.add_show(@knight_rider)
     @nbc.add_show(@parks_and_rec)
 
-    assert_equal 2, @nbc.shows.count
     assert_equal [@knight_rider, @parks_and_rec], @nbc.shows
   end
 
@@ -42,7 +41,6 @@ class NetworkTest < MiniTest::Test
     @nbc.add_show(@knight_rider)
     @nbc.add_show(@parks_and_rec)
 
-    assert_equal 4, @nbc.all_network_characters.count
     assert_equal [@michael_knight, @kitt, @leslie_knope, @ron_swanson], @nbc.all_network_characters
   end
 

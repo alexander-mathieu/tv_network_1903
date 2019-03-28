@@ -19,7 +19,7 @@ class Network
 
   def payroll
     payroll = {}
-    all_network_characters.sort_by do |character|
+    all_network_characters.each do |character|
       payroll[character.actor] = character.salary
     end
     payroll
